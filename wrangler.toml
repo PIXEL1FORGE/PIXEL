@@ -2,7 +2,9 @@
 name = "survivornet"
 compatibility_date = "2024-03-15"
 
-[pages_build_config]
-build_command = "npm run build"
-destination_dir = "dist"
-root_dir = "SurvivorNet-React"
+# The directory containing the build output
+pages_build_output_dir = "SurvivorNet-React/dist"
+
+[build]
+# Command used to build the project
+command = "npm run build --prefix SurvivorNet-React"
