@@ -2,9 +2,8 @@
 name = "survivornet"
 compatibility_date = "2024-03-15"
 
-# The directory containing the build output
-pages_build_output_dir = "SurvivorNet-React/dist"
+# Important: Cloudflare Pages (BETA) wrangler.toml does not support the [build] section.
+# The build command and root directory should be set in the Cloudflare Dashboard.
 
-[build]
-# Command used to build the project
-command = "npm run build --prefix SurvivorNet-React"
+# This path is relative to the repository root
+pages_build_output_dir = "SurvivorNet-React/dist"
